@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Dashboard from "./Dashboard";
 import SideBar from "../../component/Admin/SideBar";
 import DepartmentManager from "./DepartmentManager";
-
+import EmployeeManager from "./EmployeeManager";
 
 
 const AdminDashboard = () => {
@@ -15,17 +15,7 @@ const AdminDashboard = () => {
 
       case "employees":
         return (
-          <div>
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold">Employees</h2>
-              <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-                Add Employee
-              </button>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <p>Employee list and management </p>
-            </div>
-          </div>
+          <EmployeeManager/>
         );
 
       case "departments":
