@@ -7,12 +7,12 @@ import axios from 'axios';
 import cookies from 'js-cookie';
 
 export const publicAPI = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: "https://numiii.onrender.com//api",
   withCredentials: true,
 });
 
 export const privateAPI = axios.create({
-  baseURI:"http://localhost:3000/api",
+  baseURL:"https://numiii.onrender.com/api",
   withCredentials: true,
 });
 
