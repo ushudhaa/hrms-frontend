@@ -7,12 +7,12 @@ import axios from 'axios';
 import cookies from 'js-cookie';
 
 export const publicAPI = axios.create({
-  baseURL: "https://numiii.onrender.com//api",
+  baseURL: "https://hrms-backend-rp2h.onrender.com/api",
   withCredentials: true,
 });
 
 export const privateAPI = axios.create({
-  baseURL:"https://numiii.onrender.com/api",
+  baseURL:"https://hrms-backend-rp2h.onrender.com/api",
   withCredentials: true,
 });
 
@@ -24,13 +24,4 @@ privateAPI.interceptors.request.use((config)=> {
   return config;
 });
 
-function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/admin-dashboard" element={<AdminDashboard />} />
-    </Routes>
-  );
-}
 
-export default App;
